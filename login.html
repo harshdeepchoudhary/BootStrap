@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+<style>
+	.navitems{
+		text-decoration: none;
+		transition: all .5s;
+		color: white;
+		font-weight: bold;
+	}
+	.main{
+		border: 1px solid black;
+	}
+	.menuitems{
+		display: inline;
+		padding-right: 20px;
+	}
+	.abc{
+		height: 30px;
+		line-height: 28px;
+	}
+	.img1{
+		width: 100%;
+		height: 200px;
+	}
+	.pname{
+		font-size:6vw;
+		text-align: center;
+		line-height: 200px;
+	}
+	.mitems{
+		height: 5vw;
+		line-height: 5vw;
+		font-size: 3vw;
+		background: linear-gradient(to right,gray, black);
+	}
+	.navitems:hover{
+		background:black;
+		color: white;
+		box-shadow:  0 0 5px 4px black;
+	}
+	.sidebar{
+		width: 24vw;
+		background: gray;
+		height: 300px;
+		float: left;
+	}
+	a{text-decoration: none;}
+	.header{
+		font-size: 2vw;
+		color: yellow;
+		text-align: center;
+		font-weight: bold;
+		background: black;
+		height: 80px;
+		line-height: 80px;
+	}
+	.sidebaritem{
+		list-style: none;
+		font-size: 11;
+		display: block;
+	}
+
+	.itemside{
+		font-size: 3vw;
+		color: white;
+		display: block;
+		transition: all .8s;
+	}
+	.itemside:hover{
+		background: black;
+		border-radius: 10px;
+	}
+	i{
+		color: blue;
+	}
+    .animation1{border: 2px solid black;
+        width: 60vw;
+        float:right;
+        margin-top: 15px;
+        margin-right: 90px;
+        background-image: url(img/pppp.webp);
+        background-size: 100% 100%;
+    height: 300px;
+    animation: anim 15s infinite linear alternate;
+    }
+    @keyframes anim{
+        20%{
+            background-image: url(img/c.png);
+            background-size: 100% 100%;
+        }
+        40%{
+            background-image: url(img/css.png);
+            background-size: 100% 100%;
+        }
+        60%{
+            background-image: url(img/dot.png);
+            background-size: 100% 100%;
+        }
+        80%{
+            background-image: url(img/jja.jpeg);
+            background-size: 100% 100%;
+        }
+        100%{
+            background-image: url(img/js.png);
+            background-size: 100% 100%;
+        }
+    }
+    .footer{
+        background-color: black;
+        clear: both;
+    }
+    h1{
+        color: white;
+    }
+    p{
+        color: rgb(129, 184, 9);
+    }
+</style>
+</head>
+<body>
+<div class="row">
+	<div class="col-4"><img src="img/13.jpeg" class="img1"></div>
+	<div class="col-6 pname">My First project</div>
+	<div class="col-2">Icons</div>
+</div>
+<div class="row mitems">
+	<div class="col-12">
+		<ul>
+				<li class="menuitems"><a href="homepage.html" class="navitems">Home</a></li>
+				<li class="menuitems"><a href="#down" class="navitems">About Us</a></li>
+				<li class="menuitems"><a href="" class="navitems">Contact Us</a></li>
+				<li class="menuitems"><a href="login.html" class="navitems">Login</a></li>
+				<li class="menuitems"><a href="" class="navitems">Register</a></li>
+                <div class="imgg"></div>
+		</ul>
+	</div>
+    
+</div>
+
+
+
+<div class="sidebar">
+    
+	<div class="header">Select Language</div>
+	<div class="lang">
+        
+		<ul>
+			<li class="sidebaritem"><a href="python.html" class="itemside"><i class="fa-brands fa-java"></i> JavaScript</a></li>
+			<li class="sidebaritem"><a href="" class="itemside"><i class="fa-brands fa-python"></i> Python</a></li>
+			<li class="sidebaritem"><a href="php.html" class="itemside"><i class="fa-brands fa-php"></i> PHP</a></li>
+			<li class="sidebaritem"><a href="" class="itemside"><i class="fa-brands fa-battle-net"></i> Dot Net</a></li>
+		</ul>
+	</div>
+    
+</div>
+<form action="login.html" method="post">
+  <div class="imgcontainer">
+    <img src="img/14.jpeg" alt="Avatar" class="avatar" width="100" height="150">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+<div class="footer">
+    
+</div>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               
+            </div>
+        </div>
+        <div class="row " style="padding: 2px;">
+
+            <div class="col-4 " > <h1>Contact Information</h1><p> <address>
+                Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                Visit us at:<br>
+                Example.com<br>
+                Box 564, Disneyland<br>
+                USA
+                </address>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat velit, est fugiat iste ex cupiditate nesciunt alias molestias debitis amet reiciendis illo dolores eligendi magnam nobis pariatur corporis minus. Iusto.</p></div>
+            <div class="col-4" > <h1>About First Page</h1><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero molestiae, pariatur minus a nisi dolorum inventore tempore excepturi, quibusdam exercitationem assumenda facilis, sequi eveniet! Nisi minus dignissimos doloremque magnam perferendis?</p></div>
+            <div class="col-4"><h1>Current News</h1>
+                <marquee behavior="scroll" direction="up"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed consectetur placeat aliquid facere perspiciatis a atque, obcaecati vero. Delectus molestias saepe reiciendis ipsam magni, ullam cum ad perferendis perspiciatis sunt!</p>Here is some scrolling text... going up!</marquee>></div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                Footer
+            </div>
+
+    </div>
+
+    
+
+</div>
+<a name="down"></a>
+</body>
+</html>
